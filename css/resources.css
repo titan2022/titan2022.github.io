@@ -1,0 +1,96 @@
+.resourceLinks table {
+    margin: 60px auto 20px auto;
+    text-align: center;
+}
+
+.text {
+    visibility:hidden;
+    position: relative;
+    top: 90px;
+    color: white;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.awardsImage:hover .text, .businessImage:hover .text, .CADImage:hover .text, .electricalImage:hover .text, .mechanicalImage:hover .text, .programmingImage:hover .text {
+    visibility:visible;
+}
+
+.awardsImage:hover > .awardsOverlay, .businessImage:hover > .businessOverlay, .CADImage:hover > .CADOverlay, .electricalImage:hover > .electricalOverlay, .mechanicalImage:hover > .mechanicalOverlay, .programmingImage:hover > .programmingOverlay {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.awardsImage, .businessImage, .CADImage, .electricalImage, .mechanicalImage, .programmingImage {
+    width: 200px;
+    height: 200px;
+}
+
+.awardsImage {
+    background: url("images/subteams/awards.jpg");
+}
+
+.businessImage {
+    background: url("images/subteams/business.jpg");
+}
+
+.CADImage {
+    background: url("images/subteams/CAD.jpg");
+}
+
+.electricalImage {
+    background: url("images/subteams/electrical.jpg");
+}
+
+.mechanicalImage {
+    background: url("images/subteams/mechanical.jpg");
+}
+
+.programmingImage {
+    background: url("images/subteams/programming.jpg");
+}
+
+.resourceLinks td {
+    padding: 0px 10px 0px 10px;
+}
+
+hr {
+    border: 0;
+    width: 620px;
+    height: 0.5px;
+    background: #86a2ac;
+}
+
+.awardsExpand, .businessExpand, .CADExpand, .electricalExpand, .mechanicalExpand, .programmingExpand {
+    position: fixed;
+    width: 644px;
+    height: 418px;
+    background-color: white;
+    color: #678b98;
+    font-family: "Roboto", sans-serif;
+    z-index: +1;
+}
+
+.awardsExpand, .businessExpand, .CADExpand {
+    margin-top: -200px;
+}
+
+.electricalExpand, .mechanicalExpand, .programmingExpand {
+    margin-top: -418px;
+}
+
+.businessExpand, .mechanicalExpand {
+    margin-left: -222px;
+}
+
+.CADExpand, .programmingExpand {
+    margin-left: -444px;
+}
+
+#awardsX, #businessX, #CADX, #electricalX, #mechanicalX, #programmingX {
+    width: 20px;
+    margin-top: 10px;
+    margin-left: 600px;
+}

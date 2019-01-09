@@ -1,0 +1,13 @@
+.teamHistory, .lastSeason, .sponsors {
+    padding: 50px;
+    color: #678b98;
+}
+
+.teamHistory h3, .lastSeason h3, .sponsors h3 {
+    font-family: "Quicksand", sans-serif;
+    font-weight: 800;
+}
+.teamHistory p, .lastSeason p, .sponsors p {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+}

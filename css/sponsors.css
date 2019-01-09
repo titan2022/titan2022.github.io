@@ -1,0 +1,86 @@
+body {
+    text-align: center;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+#sponsorTable {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#sponsorTable td {
+    padding: 30px;
+}
+
+p {
+    font-size: 8pt;
+}
+
+h1, h2 {
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 16pt;
+    color: black;
+}
+
+h1 {
+    font-size: 24pt;
+    color: #275A9B;
+}
+
+.flipcard img {
+    width: 200px;
+}
+
+.flipcard a {
+    text-decoration: none;
+    color: #275A9B;
+    border: 0.5px solid #275A9B;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Nanum Gothic", sans-serif;
+}
+
+a:hover {
+    background-color: #A4B9C1;
+}
+
+.flipcard {
+  position: relative;
+  width: 220px;
+  height: 160px;
+  perspective: 500px;
+}
+.flipcard.v:hover .front, .flipcard.v.flip .front{
+  transform: rotateX(180deg);
+}
+.flipcard.v:hover .back, .flipcard.v.flip .back{
+  transform: rotateX(0deg);
+}
+.flipcard.v .back{
+  transform: rotateX(-180deg);
+}
+.flipcard.h:hover .front, .flipcard.h.flip .front{
+  transform: rotateY(180deg);
+}
+.flipcard.h:hover .back, .flipcard.h.flip .back{
+  transform: rotateY(0deg);
+}
+.flipcard.h .back{
+  transform: rotateY(-180deg);
+}
+.flipcard .front, .flipcard .back
+{
+  position:absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  color: color;
+  padding: 10px;
+  backface-visibility: hidden;
+}

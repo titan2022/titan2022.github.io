@@ -4,7 +4,8 @@
 <html>
 	<head>
         <title>Titan Robotics: Resources</title>
-		<link rel="stylesheet" type="text/css" href="../css/style.css">
+		<link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../css/resources.css">
 		<link rel="icon" href="../images/logos/2022LogoSmall.png" type="image/png" sizes="16x16">
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Roboto:300,400" rel="stylesheet">
 		<meta charset="UTF-8">
@@ -13,36 +14,107 @@
         $(document).ready(function(){
           $(".awardsOverlay").click(function(){
             $(".awardsExpand").toggle();
+            $("body").css('background', '#A4B9C1');
+            $('.navBar').css('background-color','#7696A2');
+            $(".pageBottom").css('background-color', '#142F52');
           });
         });
 
         $(document).ready(function(){
           $(".businessOverlay").click(function(){
             $(".businessExpand").toggle();
+            $("body").css('background', '#A4B9C1');
+            $('.navBar').css('background-color','#7696A2');
+            $(".pageBottom").css('background-color', '#142F52');
           });
         });
 
         $(document).ready(function(){
           $(".CADOverlay").click(function(){
             $(".CADExpand").toggle();
+            $("body").css('background', '#A4B9C1');
+            $('.navBar').css('background-color','#7696A2');
+            $(".pageBottom").css('background-color', '#142F52');
           });
         });
 
         $(document).ready(function(){
           $(".electricalOverlay").click(function(){
             $(".electricalExpand").toggle();
+            $("body").css('background', '#A4B9C1');
+            $('.navBar').css('background-color','#7696A2');
+            $(".pageBottom").css('background-color', '#142F52');
           });
         });
 
         $(document).ready(function(){
           $(".mechanicalOverlay").click(function(){
             $(".mechanicalExpand").toggle();
+            $("body").css('background', '#A4B9C1');
+            $('.navBar').css('background-color','#7696A2');
+            $(".pageBottom").css('background-color', '#142F52');
           });
         });
 
         $(document).ready(function(){
           $(".programmingOverlay").click(function(){
             $(".programmingExpand").toggle();
+            $("body").css('background', '#A4B9C1');
+            $('.navBar').css('background-color','#7696A2');
+            $(".pageBottom").css('background-color', '#142F52');
+          });
+        });
+          $(document).ready(function(){
+          $("#awardsX").click(function(){
+            $(".awardsExpand").hide();
+            $("body").css('background', '#DDE5E8');
+            $(".navBar").css('background-color', '#ACBFC6');
+            $(".pageBottom").css('background-color', '#275A9B');
+          });
+        });
+
+        $(document).ready(function(){
+          $("#businessX").click(function(){
+            $(".businessExpand").hide();
+            $("body").css('background', '#DDE5E8');
+            $(".navBar").css('background-color', '#ACBFC6');
+            $(".pageBottom").css('background-color', '#275A9B');
+          });
+        });
+
+        $(document).ready(function(){
+          $("#CADX").click(function(){
+            $(".CADExpand").hide();
+            $("body").css('background', '#DDE5E8');
+            $(".navBar").css('background-color', '#ACBFC6');
+            $(".pageBottom").css('background-color', '#275A9B');
+          });
+        });
+
+        $(document).ready(function(){
+          $("#electricalX").click(function(){
+            $(".electricalExpand").hide();
+            $("body").css('background', '#DDE5E8');
+            $(".navBar").css('background-color', '#ACBFC6');
+            $(".pageBottom").css('background-color', '#275A9B');
+          });
+        });
+
+        $(document).ready(function(){
+          $("#mechanicalX").click(function(){
+            $(".mechanicalExpand").hide();
+            $("body").css('background', '#DDE5E8');
+            $(".navBar").css('background-color', '#ACBFC6');
+            $(".pageBottom").css('background-color', '#275A9B');
+          });
+        });
+
+        $(document).ready(function(){
+          $("#programmingX").click(function(){
+            $(".programmingExpand").hide();
+            $("body").css('background', '#DDE5E8');
+            $(".navBar").css('background-color', '#ACBFC6');
+            $(".pageBottom").css('background-color', '#275A9B');
           });
         });
         </script>
@@ -61,7 +133,10 @@
 				<a href="../about/about.html">ABOUT</a>
 			</div>
             <div class="item">
-				<a class="active" href=".../resources/resources.html">RESOURCES</a>
+                <a href="../sponsors/sponsors.html">SPONSORS</a>
+            </div>
+            <div class="item">
+				<a class="active" href="../resources/resources.html">RESOURCES</a>
 			</div>
             <div class="item">
 				<a href="../contact/contact.html">CONTACT</a>
@@ -76,6 +151,7 @@
                             <p class="text">awards</p>
                         </div>
                         <div class="awardsExpand" style="display: none;">
+                            <input type="image" src="../images/x.png" id="awardsX">
                             <p>previous awards we won<hr>
                             <p>outreach ?<hr>
                             <p>photo gallery</p>
@@ -87,16 +163,18 @@
                             <p class="text">business</p>
                         </div>
                         <div class="businessExpand" style="display: none;">
+                            <input type="image" src="../images/x.png" id="businessX">
                             <p>business plan<hr>
                             <p>all the PDFs</p>
                         </div>
-                    </td><!-- business plan, open in new tab -->
+                    </td>
                     <td class="CAD">
                         <div class="CADImage">
                             <div class="CADOverlay"></div>
                             <p class="text">CAD</p>
                         </div>
                         <div class="CADExpand" style="display: none;">
+                            <input type="image" src="../images/x.png" id="CADX">
                             <p>previous robots<hr>
                             <p>start download on click<hr>
                             <p>caption underneath</p>
@@ -110,6 +188,7 @@
                             <p class="text">electrical</p>
                         </div>
                         <div class="electricalExpand" style="display: none;">
+                            <input type="image" src="../images/x.png" id="electricalX">
                             <p>no idea<hr>
                             <p>what electrical does<hr>
                             <p>oops</p>
@@ -121,6 +200,7 @@
                             <p class="text">mechanical</p>
                         </div>
                         <div class="mechanicalExpand" style="display: none;">
+                            <input type="image" src="../images/x.png" id="mechanicalX">
                             <p>training docs<hr>
                             <p>different types of drivebases<hr>
                             <p>all that good stuff</p>
@@ -132,6 +212,7 @@
                             <p class="text">programming</p>
                         </div>
                         <div class="programmingExpand" style="display: none;">
+                            <input type="image" src="../images/x.png" id="programmingX">
                             <p>github<hr>
                             <p>WPI lib ?</p>
                         </div>
@@ -143,9 +224,9 @@
                 <div class="socialMedia">
                     <table>
                         <tr>
-                            <td><a href="https://www.facebook.com/TitanRobotics2022/" target="_blank"><img src="../images/socialMedia/facebookLogo.png"></a></td>
-                            <td><a href="https://www.instagram.com/titan2022robotics/" target="_blank"><img src="../images/socialMedia/instaLogo.png"></a></td>
-                            <td><a href="https://twitter.com/team2022" target="_blank"><img src="../images/socialMedia/twitterLogo.png"></a></td>
+                            <td><a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank"><img src="../images/socialMedia/facebookLogo.png"></a></td>
+                            <td><a href="https://www.instagram.com/titan2022robotics/" rel="noopener noreferrer" target="_blank"><img src="../images/socialMedia/instaLogo.png"></a></td>
+                            <td><a href="https://twitter.com/team2022" rel="noopener noreferrer" target="_blank"><img src="../images/socialMedia/twitterLogo.png"></a></td>
                             <td><a href="mailto:titan2022robotics@gmail.com" target="_top"><img src="../images/socialMedia/emailLogo.png"></a></td>
                         </tr>
                     </table>

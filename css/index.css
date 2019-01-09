@@ -1,0 +1,81 @@
+#onion {
+    border-radius: 50%;
+    height: 150px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainPageContent {
+    width: 100%;
+    top: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.teamCarousel {
+    padding-top: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.mainPageContent .hr {
+    min-height: 5px;
+    background-color: #FFFFFF;
+    width: 100%;
+}
+
+.missionStatement {
+    background-color: #275a9b;
+    color: white;
+    padding: 30px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.missionStatement h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18pt;
+}
+
+.shortAbout {
+    margin: 10px 20px 0px 20px;
+}
+
+.shortAbout p {
+    font-family: 'Roboto', sans-serif;
+    color: #275a9b;
+    font-size: 10pt;
+    line-height: 1.25;
+    font-weight: 300;
+}
+
+#SATable {
+    width: 70%;
+    margin-left: 20%;
+}
+
+#SATable td {
+    width: 400px;
+    height: 20px;
+    text-align: center;
+}
+
+.slides {
+    width: 70%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+* {
+    box-sizing: border-box;
+}
+
+span {
+    font-weight: 500;
+}
+
+.sponsorsCarousel {
+    width: 400px;
+}

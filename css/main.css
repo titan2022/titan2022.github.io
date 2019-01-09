@@ -1,0 +1,123 @@
+/*
+colors
+#1982CC - medium blue
+#275a9b - OFFICIAL blue
+#0E4871 - dark blue
+#DDE5E8 - light gray
+#ACBFC6 - dark gray
+*/
+
+body {
+	background: #DDE5E8;
+    margin: 0;
+}
+
+.navBar .item .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navBar .item .dropbtn {
+    cursor: pointer;
+}
+
+.navBar .item .dropdown-content {
+    display: none;
+    position: relative;
+    position: absolute;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: +1;
+    overflow: auto;
+    background-color: #ACBFC6;
+}
+
+.navBar .item .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.navBar .item .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navBar .item .dropdown:hover .dropbtn {
+    color: #FFFFFF;
+    background-color: #ACBFC6;
+}
+
+.pageBottom {
+    background-color: #275A9B;
+    font-family: 'Roboto', sans-serif;
+}
+
+.logo {
+    margin-right: 2.5%;
+    margin-left: auto;
+    margin-top: 0px;
+    height: 30px;
+}
+
+.navBar {
+    background-color: #ACBFC6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    opacity: 75%;
+    z-index: 5;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.navBar .item {
+    display: inline-block;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+
+.navBar .item img.logo {
+    padding-right: 30px;
+    margin-bottom: -10px;
+}
+
+.navBar .item a:not(.logoLink) {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 18px 30px;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: .5s;
+}
+
+.navBar .item a.active {
+    color: #ACBFC6;
+    background-color: #000000;
+}
+
+.navBar .item a:hover:not(.active) {
+    color: #FFFFFF;
+}
+
+.socialMedia img {
+    width: 50px;
+}
+
+.socialMedia table {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+}
+
+.socialMedia td {
+    padding: 20px;
+}
+
+.randomInfo {
+    padding-bottom: 20px;
+    color: white;
+    text-align: center;
+}
