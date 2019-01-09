@@ -29,27 +29,27 @@
 }
 
 .awardsImage {
-    background: url("images/subteams/awards.jpg");
+    background: url("../images/subteams/awards.jpg");
 }
 
 .businessImage {
-    background: url("images/subteams/business.jpg");
+    background: url("../images/subteams/business.jpg");
 }
 
 .CADImage {
-    background: url("images/subteams/CAD.jpg");
+    background: url("../images/subteams/CAD.jpg");
 }
 
 .electricalImage {
-    background: url("images/subteams/electrical.jpg");
+    background: url("../images/subteams/electrical.jpg");
 }
 
 .mechanicalImage {
-    background: url("images/subteams/mechanical.jpg");
+    background: url("../images/subteams/mechanical.jpg");
 }
 
 .programmingImage {
-    background: url("images/subteams/programming.jpg");
+    background: url("../images/subteams/programming.jpg");
 }
 
 .resourceLinks td {
