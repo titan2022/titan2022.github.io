@@ -53,20 +53,15 @@
 }
 
 .resourceLinks td {
-    padding: 0px 10px 0px 10px;
-}
-
-hr {
-    border: 0;
-    width: 620px;
-    height: 0.5px;
-    background: #86a2ac;
+    padding: 30px 40px 30px 40px;
 }
 
 .awardsExpand, .businessExpand, .CADExpand, .electricalExpand, .mechanicalExpand, .programmingExpand {
-    position: fixed;
-    width: 644px;
-    height: 418px;
+    position: absolute;
+    margin-right: auto;
+    margin-left: auto;
+    width: 764px;
+    height: 478px;
     background-color: white;
     color: #678b98;
     font-family: "Roboto", sans-serif;
@@ -78,19 +73,47 @@ hr {
 }
 
 .electricalExpand, .mechanicalExpand, .programmingExpand {
-    margin-top: -418px;
+    margin-top: -478px;
 }
 
 .businessExpand, .mechanicalExpand {
-    margin-left: -222px;
+    margin-left: -282px;
 }
 
 .CADExpand, .programmingExpand {
-    margin-left: -444px;
+    margin-left: -564px;
 }
 
 #awardsX, #businessX, #CADX, #electricalX, #mechanicalX, #programmingX {
     width: 20px;
     margin-top: 10px;
-    margin-left: 600px;
+    margin-left: 722px;
+}
+
+#awardsFiles #businessFiles #CADFiles #electricalFiles #mechanicalFiles #programmingFiles {
+    position: absolute;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#awardsFiles a, #businessFiles a, #CADFiles a, #electricalFiles a, #mechanicalFiles a, #programmingFiles a {
+    color: #678b98;
+}
+
+#programmingFiles {
+    margin-top: 80px;
+}
+
+#CADFiles {
+    margin-top: 60px;
+}
+
+#awardsFiles, #businessFiles, #electricalFiles, #mechanicalFiles {
+    margin-top: 150px;
+}
+
+small {
+    font-size: 8pt;
 }

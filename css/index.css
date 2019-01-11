@@ -7,33 +7,26 @@ a {
     text-decoration: none;
 }
 
-.mainPageContent {
-    width: 100%;
-    top: 0;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .teamCarousel {
-    padding-top: 30px;
     margin-right: auto;
     margin-left: auto;
+    width: 100%;
 }
 
-.mainPageContent .hr {
+.content .hr {
     min-height: 5px;
     background-color: #FFFFFF;
-    width: 100%;
+    width: 70%;
 }
 
 .missionStatement {
     background-color: #275a9b;
     color: white;
     padding: 30px;
-    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .missionStatement h1 {
     font-family: 'Quicksand', sans-serif;
     font-size: 18pt;
@@ -52,8 +45,9 @@ a {
 }
 
 #SATable {
-    width: 70%;
-    margin-left: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%
 }
 
 #SATable td {
@@ -62,8 +56,12 @@ a {
     text-align: center;
 }
 
+#twitter {
+    padding-left: 10%;
+}
+
 .slides {
-    width: 70%;
+    width: 100%;
     display: none;
     margin-left: auto;
     margin-right: auto;

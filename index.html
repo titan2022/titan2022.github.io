@@ -2,139 +2,149 @@
 	Created By: IMSA Titan Robotics Programming team-->
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Titan Robotics: Home</title>
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+    <head>
+        <title>Titan Robotics: Home</title>
+        <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/index.css">
-		<link rel="icon" href="images/logos/2022LogoSmall.png" type="image/png" sizes="16x16">
+        <link rel="icon" href="images/logos/2022LogoSmall.png" type="image/png" sizes="16x16">
         <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Quicksand|Roboto:300,400" rel="stylesheet">
         <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-		<meta charset="UTF-8">
+        <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-	</head>
-	<body>
-            <div class="navBar">
-                <div class="item">
-                    <a class="logoLink" href="index.html">
-                        <img class="logo" alt="LOGO" src="images/logos/2022LogoSmall.png">
-                    </a>
+    </head>
+    <body>
+        <div class="navBar">
+            <div class="item">
+                <a class="logoLink" href="index.html">
+                    <img class="logo" alt="LOGO" src="images/logos/2022LogoSmall.png">
+                </a>
+            </div>
+            <div class="item">
+                <a class="active" href="index.html">HOME</a>
+            </div>
+            <div class="item">
+                <a href="about/about.html">ABOUT</a>
+            </div>
+            <div class="item">
+                <a href="sponsors/sponsors.html">SPONSORS</a>
+            </div>
+            <div class="item">
+                <a href="resources/resources.html">RESOURCES</a>
+            </div>
+            <div class="item">
+                <a href="contact/contact.php">CONTACT</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="teamCarousel">
+                <img class="slides" src="images/homeCarousel/1-mikeBack.jpg">
+                <img class="slides" src="images/homeCarousel/2-teamPicture.jpg">
+                <img class="slides" src="images/homeCarousel/3-climb2017.jpg">
+                <img class="slides" src="images/homeCarousel/4-driveTeam2017.jpg">
+                <img class="slides" src="images/homeCarousel/5-laughingBenAngelica.jpg">
+                <img class="slides" src="images/homeCarousel/6-startPosition.jpg">
+            </div>
+            <script>
+                var slideIndex = 0;
+                carousel();
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("slides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > x.length) {slideIndex = 1}
+                    x[slideIndex-1].style.display = "block";
+                    setTimeout(carousel, 2000); //change image once/2 sec
+                }
+            </script>
+            <div class="indexContent">
+                <div class="missionStatement">
+                    <h1>"Titan Robotics, FRC Team 2022, inspires leadership and technical capability in members through rigorous FIRST competition training, outreach demonstrations, and volunteering with local youth in STEM."</h1>
                 </div>
-                <div class="item">
-                    <a class="active" href="index.html">HOME</a>
-                </div>
-                <div class="item">
-                    <a href="about/about.html">ABOUT</a>
-                </div>
-                <div class="item">
-                    <a href="sponsors/sponsors.html">SPONSORS</a>
-                </div>
-                <div class="item">
-                    <a href="resources/resources.html">RESOURCES</a>
-                </div>
-                <div class="item">
-                    <a href="contact/contact.html">CONTACT</a>
+                <div class="shortAbout">
+                    <table id="SATable">
+                        <tr>
+                            <td>
+                                <p>FRC Team 2022, Titan Robotics, is a high school robotics team made up of students from the <span>Illinois Mathematics and Science Academy (IMSA)</span>. Located in Aurora, IL, IMSA is a residential high school that accepts gifted students from across the state, making our backgrounds <span>diverse</span> and impacts <span>far-reaching</span>. We compete in the FIRST Robotics Competition (FRC) and other off-season competitions, which teaches our members technical skills, such as <span>mechanical</span>, <span>programming</span>, <span>electrical</span>, and <span>computer aided design (CAD)</span>, as well as soft skills involving <span>business</span>, <span>leadership</span>, and <span>communication</span>.</p><br>
+                            </td>
+                            <td id="twitter" rowspan="2">
+                                <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/Team2022?ref_src=twsrc%5Etfw">Tweets by Team 2022</a>
+                                <script async src="https://platform.twitter.com/widgets.js"></script>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <a href="sponsors.html">
+                                    <div class="sponsorsCarousel">
+                                        <img class="slides2" alt="Caterpillar Inc." src="images/sponsors/400x200/1-caterpillar.png">
+                                        <img class="slides2" alt="Vital Proteins" src="images/sponsors/400x200/2-imsa.png">
+                                        <img class="slides2" src="images/sponsors/400x200/3-vital-proteins.png">
+                                        <img class="slides2" src="images/sponsors/400x200/4-gb-electric.png">
+                                        <img class="slides2" src="images/sponsors/400x200/5-te-connectivity.png">
+                                        <img class="slides2" src="images/sponsors/400x200/6-boeing.png">
+                                        <img class="slides2" src="images/sponsors/400x200/7-fv-sandblasting.png">
+                                        <img class="slides2" src="images/sponsors/400x200/8-share-machine.png">
+                                        <img class="slides2" src="images/sponsors/400x200/9-bill.png">
+                                        <img class="slides2" src="images/sponsors/400x200/10-TM.png">
+                                        <img class="slides2" src="images/sponsors/400x200/11-walmart.png">
+                                    </div>
+                                </a>
+                                <script>
+                                    var slideIndex = 0;
+                                    carousel();
+                                    function carousel() {
+                                        var i;
+                                        var x = document.getElementsByClassName("slides2");
+                                        for (i = 0; i < x.length; i++) {
+                                            x[i].style.display = "none";
+                                        }
+                                        slideIndex++;
+                                        if (slideIndex > x.length) {slideIndex = 1}
+                                        x[slideIndex-1].style.display = "block";
+                                        setTimeout(carousel, 6000);
+                                    }
+                                </script>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
             </div>
-
-            <div class="mainPageContent">
-                <div class="teamCarousel">
-                    <img class="slides" src="images/homeCarousel/1-mikeBack.jpg">
-                    <img class="slides" src="images/homeCarousel/2-teamPicture.jpg">
-                    <img class="slides" src="images/homeCarousel/3-climb2017.jpg">
-                    <img class="slides" src="images/homeCarousel/4-driveTeam2017.jpg">
-                    <img class="slides" src="images/homeCarousel/5-laughingBenAngelica.jpg">
-                    <img class="slides" src="images/homeCarousel/6-startPosition.jpg">
-                </div>
-                <script>
-                    var slideIndex = 0;
-                    carousel();
-                    function carousel() {
-                        var i;
-                        var x = document.getElementsByClassName("slides");
-
-                        for (i = 0; i < x.length; i++) {
-                            x[i].style.display = "none";
-                        }
-                        slideIndex++;
-
-                        if (slideIndex > x.length) {slideIndex = 1}
-                        x[slideIndex-1].style.display = "block";
-                        setTimeout(carousel, 2000); //change image once/2 sec
-                        }
-                </script>
-                <div class="indexContent">
-                    <div class="missionStatement">
-                        <h1>"Titan Robotics, FRC Team 2022, inspires leadership and technical capability in members through rigorous FIRST competition training, outreach demonstrations, and volunteering with local youth in STEM."</h1>
-                    </div>
-                    <div class="shortAbout">
-                        <table id="SATable">
-                            <tr>
-                                <td>
-                                    <p>FRC Team 2022, Titan Robotics, is a high school robotics team made up of students from the <span>Illinois Mathematics and Science Academy (IMSA)</span>. Located in Aurora, IL, IMSA is a residential high school that accepts gifted students from across the state, making our backgrounds <span>diverse</span> and impacts <span>far-reaching</span>. We compete in the FIRST Robotics Competition (FRC) and other off-season competitions, which teaches our members technical skills, such as <span>mechanical</span>, <span>programming</span>, <span>electrical</span>, and <span>computer aided design (CAD)</span>, as well as soft skills involving <span>business</span>, <span>leadership</span>, and <span>communication</span>.</p>
-                                    <br>
-                                </td>
-                                <td rowspan="2">
-                                    <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/Team2022?ref_src=twsrc%5Etfw">Tweets by Team 2022</a>
-                                    <script async src="https://platform.twitter.com/widgets.js"></script>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    <div class="sponsorsCarousel">
-                                        <a href="sponsors.html#cat"><img class="slides2" alt="Caterpillar Inc." src="images/sponsors/400x200/1-caterpillar.png"></a>
-                                        <a href="sponsors.html#imsa"><img class="slides2" alt="Vital Proteins" src="images/sponsors/400x200/2-imsa.png"></a>
-                                        <a href="sponsors.html#vp"><img class="slides2" src="images/sponsors/400x200/3-vital-proteins.png"></a>
-                                        <a href="sponsors.html#gb"><img class="slides2" src="images/sponsors/400x200/4-gb-electric.png"></a>
-                                        <a href="sponsors.html#te"><img class="slides2" src="images/sponsors/400x200/5-te-connectivity.png"></a>
-                                        <a href="sponsors.html#boeing"><img class="slides2" src="images/sponsors/400x200/6-boeing.png"></a>
-                                        <a href="sponsors.html#fv"><img class="slides2" src="images/sponsors/400x200/7-fv-sandblasting.png"></a>
-                                        <a href="sponsors.html#sm"><img class="slides2" src="images/sponsors/400x200/8-share-machine.png"></a>
-                                        <a href="sponsors.html#bill"><img class="slides2" src="images/sponsors/400x200/9-bill.png"></a>
-                                        <a href="sponsors.html#TM"><img class="slides2" src="images/sponsors/400x200/10-TM.png"></a>
-                                        <a href="sponsors.html#walmart"><img class="slides2" src="images/sponsors/400x200/11-walmart.png"></a>
-                                    </div>
-                                    <script>
-                                        var slideIndex = 0;
-                                        carousel();
-                                        function carousel() {
-                                            var i;
-                                            var x = document.getElementsByClassName("slides2");
-                                            for (i = 0; i < x.length; i++) {
-                                                x[i].style.display = "none";
-                                            }
-                                            slideIndex++;
-                                            if (slideIndex > x.length) {slideIndex = 1}
-                                            x[slideIndex-1].style.display = "block";
-                                            setTimeout(carousel, 6000);
-                                            }
-                                    </script>
-                                    </a>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-                    </div>
-                <br><br><br><br>
-                <div class="pageBottom">
-                    <div class="socialMedia">
-                        <table>
-                            <tr>
-                                <td><a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank"><img src="images/socialMedia/facebookLogo.png"></a></td>
-                                <td><a href="https://www.instagram.com/titan2022robotics/" rel="noopener noreferrer" target="_blank"><img src="images/socialMedia/instaLogo.png"></a></td>
-                                <td><a href="https://twitter.com/team2022" rel="noopener noreferrer" target="_blank"><img src="images/socialMedia/twitterLogo.png"></a></td>
-                                <td><a href="mailto:titan2022robotics@gmail.com" target="_top"><img src="images/socialMedia/emailLogo.png"></a></td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="randomInfo">
-                        <p>Illinois Mathematics and Science Academy<br>
-                        Titan Robotics FRC Team 2022<br>
-                        1500 Sullivan Rd, Aurora IL, 60506</p>
-                    </div>
-    </div>
+        </div><br><br>
+        <div class="pageBottom">
+            <div class="socialMedia">
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank">
+                                <img src="images/socialMedia/facebookLogo.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com/titan2022robotics/" rel="noopener noreferrer" target="_blank">
+                                <img src="images/socialMedia/instaLogo.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://twitter.com/team2022" rel="noopener noreferrer" target="_blank">
+                                <img src="images/socialMedia/twitterLogo.png">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="mailto:titan2022robotics@gmail.com" target="_top">
+                                <img src="images/socialMedia/emailLogo.png">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="randomInfo">
+                <p>Titan Robotics FRC Team 2022<br>Illinois Mathematics and Science Academy<br>1500 Sullivan Rd, Aurora IL, 60506</p>
+            </div>
+        </div>
     </body>
 </html>

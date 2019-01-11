@@ -1,13 +1,47 @@
-.teamHistory, .lastSeason, .sponsors {
-    padding: 50px;
+.content {
     color: #678b98;
+    font-weight: 100;
+    margin-bottom: 40px;
 }
 
-.teamHistory h3, .lastSeason h3, .sponsors h3 {
+h3 {
     font-family: "Quicksand", sans-serif;
     font-weight: 800;
 }
-.teamHistory p, .lastSeason p, .sponsors p {
+ p {
     font-family: "Roboto", sans-serif;
     line-height: 1.5;
+}
+
+.theCompetition img {
+    width: 20%;
+}
+
+.theCompetition {
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.lastSeason, .mentors {
+    margin-bottom: 40px;
+}
+
+#bold {
+    font-weight: 500;
+}
+
+#img {
+    margin-top: -20px;
+}
+
+#email {
+    color: #29383d;
 }
