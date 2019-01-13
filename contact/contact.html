@@ -1,23 +1,5 @@
 <!--Titan Robotics Contact Page
 Created By: IMSA Titan Robotics Programming team-->
-<?php
-if(isset($_POST['submit'])){
-    $to = "titan2022robotics@gmail.com";
-    $from = $_POST['email'];
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $fname." ".$lname." wrote the following:"."\n\n".$_POST['message'];
-    $message2 = "Here is a copy of your message, ".$fname."\n\n".$_POST['message'];
-
-    $headers = "From:".$from;
-    $headers2 = "From:".$to;
-    mail($to,$subject,$message,$headers); //sends message to titan2022robotics@gmail.com
-    mail($from,$subject2,$message2,$headers2); //sends copy of message to the sender
-    //header('Location: contact.php');
-    }
-?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -48,12 +30,12 @@ if(isset($_POST['submit'])){
                 <a href="../resources/resources.html">RESOURCES</a>
             </div>
             <div class="item">
-                <a class="active" href="contact.php">CONTACT</a>
+                <a class="active" href="contact.html">CONTACT</a>
             </div>
         </div>
         <div class="content">
             <div class="contactForm">
-                <form action="" method="post">
+              <form action="https://formspree.io/titan2022robotics@gmail.com" method="POST" />
                     <label for="fname"><p>First Name <small>*</small></p></label>
                     <input type="text" id="fname" name="fname" required>
                     <label for="lname"><p>Last Name <small>*</small></p></label>
