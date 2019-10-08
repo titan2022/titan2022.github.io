@@ -1,150 +1,387 @@
-<!--Titan Robotics Home Page
-	Created By: IMSA Titan Robotics Programming team-->
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Titan Robotics: Home</title>
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="icon" href="images/logos/2022LogoSmall.png" type="image/png" sizes="16x16">
-        <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700|Quicksand|Roboto:300,400" rel="stylesheet">
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
-    </head>
-    <body>
-        <div class="navBar">
-            <div class="item">
-                <a class="logoLink" href="index.html">
-                    <img class="logo" alt="LOGO" src="images/logos/2022LogoSmall.png">
-                </a>
+<!DOCTYPE HTML>
+<!--Samuel Anozie, June 2019. Titan Robotics Website-->
+<head>
+	<meta charset="UTF-8">
+	<title>Titan Robotics</title>
+	 <!--Favicon-->
+	 <link rel="icon" href="/public/imgs/drawing.svg" type="image/png" sizes="16x16">
+	<!-- Bootstrap Links -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<!--Odometer Links-->
+	<link rel="stylesheet" href="/public/odometer-theme-default.css" />
+	<script src="/public/odometer.js"></script>
+
+	<!--Local Links-->
+	<link rel="stylesheet" href="/public/styles.css">
+	<script src = "/public/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="/public/sponsors.css">
+	
+</head>
+<!-- Future Plans-->
+<!--Eventually animate the circutry on landing-->
+<body>
+    <div id="landing" class="container-fluid">
+        <div id="items" class="row h-100 justify-content-center">
+            <div class="col-md-4 col-sm-6 col-6 text-right">
+                <h1 id="titan" class="headerTitle">TITAN</h1>
             </div>
-            <div class="item">
-                <a class="active" href="index.html">HOME</a>
-            </div>
-            <div class="item">
-                <a href="about/about.html">ABOUT</a>
-            </div>
-            <div class="item">
-                <a href="sponsors/sponsors.html">SPONSORS</a>
-            </div>
-            <div class="item">
-                <a href="resources/resources.html">RESOURCES</a>
-            </div>
-            <div class="item">
-                <a href="contact/contact.html">CONTACT</a>
-            </div>
-        </div>
-        <div class="content">
-            <div class="teamCarousel">
-                <img class="slides" src="images/homeCarousel/1-mikeBack.jpg">
-                <img class="slides" src="images/homeCarousel/2-teamPicture.jpg">
-                <img class="slides" src="images/homeCarousel/3-climb2017.jpg">
-                <img class="slides" src="images/homeCarousel/4-driveTeam2017.jpg">
-                <img class="slides" src="images/homeCarousel/5-laughingBenAngelica.jpg">
-                <img class="slides" src="images/homeCarousel/6-startPosition.jpg">
-            </div>
-            <script>
-                var slideIndex = 0;
-                carousel();
-                function carousel() {
-                    var i;
-                    var x = document.getElementsByClassName("slides");
-                    for (i = 0; i < x.length; i++) {
-                        x[i].style.display = "none";
-                    }
-                    slideIndex++;
-                    if (slideIndex > x.length) {slideIndex = 1}
-                    x[slideIndex-1].style.display = "block";
-                    setTimeout(carousel, 2000); //change image once/2 sec
-                }
-            </script>
-            <div class="indexContent">
-                <div class="missionStatement">
-                    <h1>"Titan Robotics, FRC Team 2022, inspires leadership and technical capability in members through rigorous FIRST competition training, outreach demonstrations, and volunteering with local youth in STEM."</h1>
-                </div>
-                <div class="shortAbout">
-                    <table id="SATable">
-                        <tr>
-                            <td>
-                                <p>FRC Team 2022, Titan Robotics, is a high school robotics team made up of students from the <span>Illinois Mathematics and Science Academy (IMSA)</span>. Located in Aurora, IL, IMSA is a residential high school that accepts gifted students from across the state, making our backgrounds <span>diverse</span> and impacts <span>far-reaching</span>. We compete in the FIRST Robotics Competition (FRC) and other off-season competitions, which teaches our members technical skills, such as <span>mechanical</span>, <span>programming</span>, <span>electrical</span>, and <span>computer aided design (CAD)</span>, as well as soft skills involving <span>business</span>, <span>leadership</span>, and <span>communication</span>.</p><br>
-                            </td>
-                            <td id="twitter" rowspan="2">
-                                <a class="twitter-timeline" data-width="300" data-height="400" href="https://twitter.com/Team2022?ref_src=twsrc%5Etfw">Tweets by Team 2022</a>
-                                <script async src="https://platform.twitter.com/widgets.js"></script>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <a href="sponsors.html">
-                                    <div class="sponsorsCarousel">
-                                        <img class="slides2" alt="Caterpillar Inc." src="images/sponsors/400x200/1-caterpillar.png">
-                                        <img class="slides2" alt="Vital Proteins" src="images/sponsors/400x200/2-imsa.png">
-                                        <img class="slides2" src="images/sponsors/400x200/3-vital-proteins.png">
-                                        <img class="slides2" src="images/sponsors/400x200/4-gb-electric.png">
-                                        <img class="slides2" src="images/sponsors/400x200/5-te-connectivity.png">
-                                        <img class="slides2" src="images/sponsors/400x200/6-boeing.png">
-                                        <img class="slides2" src="images/sponsors/400x200/7-fv-sandblasting.png">
-                                        <img class="slides2" src="images/sponsors/400x200/8-share-machine.png">
-                                        <img class="slides2" src="images/sponsors/400x200/9-bill.png">
-                                        <img class="slides2" src="images/sponsors/400x200/10-TM.png">
-                                        <img class="slides2" src="images/sponsors/400x200/11-walmart.png">
-                                    </div>
-                                </a>
-                                <script>
-                                    var slideIndex = 0;
-                                    carousel();
-                                    function carousel() {
-                                        var i;
-                                        var x = document.getElementsByClassName("slides2");
-                                        for (i = 0; i < x.length; i++) {
-                                            x[i].style.display = "none";
-                                        }
-                                        slideIndex++;
-                                        if (slideIndex > x.length) {slideIndex = 1}
-                                        x[slideIndex-1].style.display = "block";
-                                        setTimeout(carousel, 6000);
-                                    }
-                                </script>
-                            </td>
-                        </tr>
-                    </table>
+            <div id="robotCol" class="col-md-4 h-100 text-center">
+                <div id="robotContainer" class="position-relative h-100">
+                    <img id="robotImg" src="/public/imgs/robot.png" class="img-fuid position-absolute">
                 </div>
             </div>
-        </div><br><br>
-        <div class="pageBottom">
-            <div class="socialMedia">
-                <table>
-                    <tr>
-                        <td>
-                            <a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank">
-                                <img src="images/socialMedia/facebookLogo.png">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://www.instagram.com/titan2022robotics/" rel="noopener noreferrer" target="_blank">
-                                <img src="images/socialMedia/instaLogo.png">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="https://twitter.com/team2022" rel="noopener noreferrer" target="_blank">
-                                <img src="images/socialMedia/twitterLogo.png">
-                            </a>
-                        </td>
-                        <td>
-                            <a href="mailto:titan2022robotics@gmail.com" target="_top">
-                                <img src="images/socialMedia/emailLogo.png">
-                            </a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <div class="randomInfo">
-                <p>Titan Robotics FRC Team 2022<br>Illinois Mathematics and Science Academy<br>1500 Sullivan Rd, Aurora IL, 60506</p>
+            <div class="col-md-4 col-sm-6 col-6">
+				<h1 id="robotics" class="headerTitle">ROBOTICS</h1>
             </div>
         </div>
-    </body>
-</html>
+    </div>
+    <div id="teamnum" class="container-fluid position-absolute" data-scroll-speed="2">
+        <div class="row justify-content-center">
+            <div class="col-md-5 text-center">
+                <h2 class="numDescrip">FRC TEAM</h2>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h1 style="pointer-events: auto;">Aurora, Illinois</h1>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-12 text-center">
+                <h2 class="numDescrip">EST. FALL 2006</h2>
+            </div>
+        </div>
+    </div>
+	<div id="intro" class = "container-fluid position-relative">
+		<div id="videoDiv" class = "position-relative">           
+			<video  src="/public/backvideo.mp4" preload="preload" id="video"  autoplay loop muted></video>
+		</div>
+		<div id = "blackFilter" class = "row"></div>
+		<div id = "videoContent" class = "row"></div>
+	</div>
+	<div id = "info" class = "container-fluid position-relative">
+	<span class = "gradientBack position-absolute"></span>
+		<div id = "imsa" class = "row justify-content-center">
+			<div id = "imsaText" class = "col-md-12">
+				<div class = "row word">Instilling</div>
+				<div class = "row word whiteenphasis">leadership</div>
+				<div class = "row word">and</div>
+				<div class = "whiteenphasis">
+					<div class = "row word">technical</div>
+					<div class = "row word">capabilities</div>
+				</div>
+				<div class = "row word">within</div>
+				<div class = "row word">students</div>
+				<div class = "row word">of the</div>
+				<div class = "enphasis">
+					<div class = "row word">Illinois</div>
+					<div class = "row word">Mathematics</div>
+					<div class = "row word">and</div>
+					<div class = "row word">Science</div>
+					<div class = "row word">Academy</div>
+				</div>
+				<p> Located in Aurora, IL, IMSA is a residential high school that accepts gifted students from across the state, making our backgrounds diverse and impacts far-reaching. We compete in the FIRST Robotics Competition (FRC) and other off-season competitions, which teaches our members technical skills, such as <span class = "bold">mechanical, programming, electrical,</span> and <span class = "bold">computer aided design (CAD),</span> as well as soft skills involving <span class = "bold">business, leadership,</span> and <span class = "bold">communication.</span>
+
+				</p>
+			</div>
+		</div>
+	</div>
+	<div id = "frc" class = "container-fluid position-relative">
+		<span id = "frcback" class = "position-absolute"></span>
+		<div id = "firstLogo" class = "row justify-content-center">
+			<div class = "col-md-6 text-center">
+				<img src = "/public/imgs/firstlogo.png" class = "img-fluid"/>
+			</div>
+		</div>
+		<div class = "row justify-content-center">
+			<div class = "col-md-12 text-center">
+				<h2>COMPETITION STATS</h2>
+			</div>
+		</div>
+		<div class = "row justify-content-center">
+			<div class = "col-md-12 text-center">
+				<h2 id = "year">2019</h2>
+			</div>
+		</div>
+		<div id = "table" class = "row justify-content-center">
+			<div class = "col-md-12">
+				<div id = "comp" class = "row justify-content-center">
+					<h3 id = "compName"></h3>
+				</div>
+				<div id = "tableHeaders" class = "row text-center align-items-end">
+					<div class = "col">
+						<div class = "row tablehead">RANKING SCORE</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "row tablehead">CARGO</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "col tablehead">HATCH PANEL</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "col tablehead">HAB CLIMB</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "col tablehead">SANDSTORM BONUS</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "col tablehead">DQ</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "col tablehead">PLAYED</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					<div class = "col">
+						<div class = "col tablehead">TOTAL RANKING POINTS</div>
+						<div class = "row points odometer justify-content-center"></div>
+					</div>
+					
+				</div>
+				<div id = "tableNums" class = "row text-center">
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "sponsor" class = "cotainer-fluid">
+		<div class = "row tableRow text-cener justify-content-center">
+			<div class = "col-md-10">
+				<h2 id = "sponsorHeader">SPONSORS</h2>
+			</div>
+		</div>
+		<div class = "row tableRow text-cener justify-content-center">
+			<div class = "col-md-10 ">
+				<p class = "lead">Sponsorship provides us with necessary support, including financial contributions, in-kind donations, employee volunteerism and mentoring, which are all vital to our growth and success as an FRC team. We would like to extend our deepest thanks to all of our sponsors for their continued support!</p>
+			</div>
+		</div>
+		<div id="sponsorTable" class = "row tableRow">
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/1-caterpillar.png">
+					</div>
+					<div class="back">
+						<p>An Optimus Prime Partner since 2008, Caterpillar Inc. provides Team 2022 with monetary support and mentorship contributions.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://www.caterpillar.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/2-imsa.png">
+					</div>
+					<div class="back">
+						<p>An Optimus Prime Partner since 2007, Illinois Mathematics and Science Academy provides Team 2022 with a workspace, power tools, and basic utilities.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://www.imsa.edu/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/3-vital-proteins.png">
+					</div>
+					<div class="back">
+						<p>An Optimus Prime Partner since 2018, Vital Proteins provides Team 2022 with monetary support.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://www.vitalproteins.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/4-gb-electric.png">
+					</div>
+					<div class="back">
+						<p>An R2D2 Partner since 2017, Gus Berthold Electric provides Team 2022 with sheet metal and sheet metal    machining services.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://bertholdelectric.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/5-te-connectivity.png">
+					</div>
+					<div class="back">
+						<p>An R2D2 Partner since 2018, TE Connectivity Ltd. provides Team 2022 with monetary support.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://www.te.com/usa-en/home.html" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/6-boeing.png">
+					</div>
+					<div class="back">
+						<p>A C3PO Partner since 2018, The Boeing Company provides Team 2022 with monetary support.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://www.boeing.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/7-fv-sandblasting.png">
+					</div>
+					<div class="back">
+						<p>A C3PO Partner since 2018, Fox Valley Sandblasting &amp; Powder Coating provides Team 2022 with powder coating services.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="http://www.blastandcoat.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/8-share-machine.png">
+					</div>
+					<div class="back">
+						<p>A C3PO Partner since 2018, Share Machine provides Team 2022 with machining services.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="http://sharemachine.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/9-bill.png">
+					</div>
+					<div class="back">
+						<br><p>A Wall-E Partner since 2016, Art By Bill provides Team 2022 with welding services.</p>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/10-TM.png">
+					</div>
+					<div class="back">
+						<p>A Wall-E Partner since 2018, TransMarket Group provides Team 2022 with monetary support.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="http://www.transmarketgroup.com/home" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<img src="/public/imgs/11-walmart.png">
+					</div>
+					<div class="back">
+						<p>A Wall-E Partner since 2018, Walmart provides Team 2022 with monetary support.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href="https://www.walmart.com/" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class = "col-md-4 col-sm-6">
+				<div class="flipcard h m-auto">
+					<div class="front">
+						<h1>JOIN THE LIST</h1>
+					</div>
+					<div class="back">
+						<div class="button">
+							<div class="title">
+								<a href="mailto:titan2022robotics@gmail.com" target="_blank">CONTACT US!</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id = "contact" class = "container-fluid">
+		<div class="row justify-content-center">
+			<div class = "col-md-6 text-center">
+				<h2>CONTACT US</h2>
+				<form action="https://formspree.io/titan2022robotics@gmail.com" method="POST">
+					<input type="text" id="fname" name="fname" placeholder = "First Name" required><br/>
+					<input type="text" id="lname" name="lname" placeholder = "Last Name" required><br/>
+					<input type="email" id="email" name="email" placeholder = "Email" required><br/>
+					<select id="affiliation" name="affiliation" placeholder = "Affiliation" required>
+						<option id = "affiloption" value="" disabled selected>Affiliation</option>
+						<option value="fellowFRC">Fellow FRC Team</option>
+						<option value="potentialSponsor">Potential Sponsor</option>
+						<option value="other">Other</option>
+					</select><br/>
+					<textarea id="message" name="message" rows="3" placeholder = "Write your message in here..." required></textarea><br/>
+					<button type = "submit" class="bttn-fill bttn-md bttn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div id = "footer" class = "container-fluid">
+		<div class = "row">
+			<div id = "name" class = "col-md-4 text-center">
+				<h5>TITAN <span>ROBOTICS</span></h5>
+			</div>
+			<div id = "footerLogo" class = "col-md-4">
+				<a href = "#landing"><img src = "/public/imgs/iconlogo.png" class = "img-fluid"/></a>
+			</div>
+			<div id = "icons" class = "col-md-4">
+				<div class = "row w-100">
+					<div class = "col-4 text-center d-flex align-items-center">
+						<a href="https://twitter.com/team2022" rel="noopener noreferrer" target="_blank"><img src = "/public/imgs/twitterlogo.png"/></a>
+					</div>
+					<div class = "col-4 text-center d-flex align-items-center ">
+						<a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank"><img src = "/public/imgs/facebooklogo.png"/></a>
+					</div>
+					<div class = "col-4 text-center d-flex align-items-center">
+						<a href = "https://www.instagram.com/titan2022robotics/" rel = "noopener noreferrer" target="_blank"><img src = "/public/imgs/instagram.png" /></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>

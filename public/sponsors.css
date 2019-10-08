@@ -1,0 +1,70 @@
+.table-borderless td,
+.table-borderless th {
+	border: 0;
+}
+
+.flipcard p {
+	font-size: 0.7rem;
+	margin-bottom: 1%;
+}
+
+h1, h2 {
+	font-weight: 100;
+}
+
+h2 {
+	font-size: 16pt;
+	color: black;
+}
+
+h1 {
+	font-size: 24pt;
+	color: #275A9B;
+}
+
+.flipcard img {
+	height: 80%;
+	
+}
+
+.flipcard {
+	width: 220px;
+	height: 160px;
+	perspective: 500px;
+	text-align: center;
+}
+.flipcard.v:hover .front, .flipcard.v.flip .front{
+	transform: rotateX(180deg);
+}
+.flipcard.v:hover .back, .flipcard.v.flip .back{
+	transform: rotateX(0deg);
+}
+.flipcard.v .back{
+	transform: rotateX(-180deg);
+}
+.flipcard.h:hover .front, .flipcard.h.flip .front{
+	transform: rotateY(180deg);
+}
+.flipcard.h:hover .back, .flipcard.h.flip .back{
+	transform: rotateY(0deg);
+}
+.flipcard.h .back{
+	transform: rotateY(-180deg);
+}
+.flipcard .front, .flipcard .back
+{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	transition: all 0.5s ease-in;
+	color: color;
+	padding: 10px;
+	backface-visibility: hidden;
+}
+
+#sentence {
+	width: 70%;
+	line-height: 1.75;
+	color: #48616a;
+}

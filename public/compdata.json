@@ -1,0 +1,35 @@
+[
+	{
+		"name": "MIDWEST REGIONAL",
+		"rankScore": 0.77,
+		"cargo": 162,
+		"hatchPanel": 42,
+		"habClimb": 60,
+		"sandBonus": 84,
+		"dq": 0,
+		"played": 9,
+		"rankPoints": 7
+	},
+	{
+		"name": "CENTRAL ILLINOIS REGIONAL",
+		"rankScore": 1.63,
+		"cargo": 261,
+		"hatchPanel": 100,
+		"habClimb": 135,
+		"sandBonus": 141,
+		"dq": 0,
+		"played": 11,
+		"rankPoints": 18
+	},
+	{
+		"name": "WISCONSIN REGIONAL",
+		"rankScore": 1.40,
+		"cargo": 228,
+		"hatchPanel": 88,
+		"habClimb": 111,
+		"sandBonus": 141,
+		"dq": 0,
+		"played": 10,
+		"rankPoints": 14
+	}
+]
