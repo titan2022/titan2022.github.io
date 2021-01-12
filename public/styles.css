@@ -372,7 +372,7 @@ html, body {
   font-weight: 100;
   font-size: 3rem;
 }
-#frc #table #compName {
+#frc #table #newsletter {
   font-size: 2rem;
   letter-spacing: 0.1rem;
 }
@@ -387,9 +387,43 @@ html, body {
   font-weight: 100;
   font-size: 5rem;
 }
-#frc #year {
+#frc #newsletterInfo {
   margin-top: 0;
   font-size: 3rem;
+}
+
+#newsletterMonth {
+  margin: 0 10px;
+  width: 33.333333%;
+  text-align:center;
+}
+
+#newsletterMonth a {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+  font-size: 1.5rem;
+}
+
+#newsletterMonth a:hover {
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+
+#seasonRecap {
+  text-align:center;
+  height:480px;
+}
+
+#seasonRecap h3{
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+}
+
+#recapVideo {
+	text-align:center;
+	position:relative
 }
 
 #sponsor p.lead {

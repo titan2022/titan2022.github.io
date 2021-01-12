@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <!--Samuel Anozie, June 2019. Titan Robotics Website-->
+<!--Mahi Sutaria, January 2021. Updated sponsors and season recap -->
 <head>
 	<meta charset="UTF-8">
 	<title>Titan Robotics</title>
@@ -17,7 +18,7 @@
 
 	<!--Local Links-->
 	<link rel="stylesheet" href="/public/styles.css">
-	<script src = "/public/script.js"></script>
+	<script src = "/script.js"></script>
 	<link rel="stylesheet" type="text/css" href="/public/sponsors.css">
 	
 </head>
@@ -99,60 +100,29 @@
 		</div>
 		<div class = "row justify-content-center">
 			<div class = "col-md-12 text-center">
-				<h2>COMPETITION STATS</h2>
+				<h2 id = "newsletterInfo">Read our monthly newsletters for a recap of the start of our 2020-2021 season:</h2>
+			</div>		
+			<div class = "col" id = "newsletterMonth">
+				<a href = "/public/October_Newsletter.pdf" target = "_blank">October</a>
+				<h3 id = "newsletter"><iframe src="/public/October_Newsletter.pdf" width="350px" height="450px"></iframe></h3>
 			</div>
-		</div>
-		<div class = "row justify-content-center">
-			<div class = "col-md-12 text-center">
-				<h2 id = "year">2019</h2>
+			<div class = "col" id = "newsletterMonth">
+				<a href = "/public/November_Newsletter.pdf" target = "_blank">November</a>
+				<h3 id = "newsletter"><iframe src="/public/November_Newsletter.pdf" width="350px" height="450px"></iframe></h3>
 			</div>
-		</div>
-		<div id = "table" class = "row justify-content-center">
-			<div class = "col-md-12">
-				<div id = "comp" class = "row justify-content-center">
-					<h3 id = "compName"></h3>
-				</div>
-				<div id = "tableHeaders" class = "row text-center align-items-end">
-					<div class = "col">
-						<div class = "row tablehead">RANKING SCORE</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "row tablehead">CARGO</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "col tablehead">HATCH PANEL</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "col tablehead">HAB CLIMB</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "col tablehead">SANDSTORM BONUS</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "col tablehead">DQ</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "col tablehead">PLAYED</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					<div class = "col">
-						<div class = "col tablehead">TOTAL RANKING POINTS</div>
-						<div class = "row points odometer justify-content-center"></div>
-					</div>
-					
-				</div>
-				<div id = "tableNums" class = "row text-center">
+			<div class = "col" id = "newsletterMonth">
+				<a href = "/public/December_Newsletter.pdf" target = "_blank">December</a>
+				<h3 id = "newsletter"><iframe src="/public/December_Newsletter.pdf" width="350px" height="450px"></iframe></h3>
+			</div>
 
-				</div>
+			<div class = "col" id = "seasonRecap">   
+				<br><h3>Check out a recap of our 2019-2020 season:</h3>
+				<video width="640px" height = "360px" src="/public/2019-20Recap.mp4" preload="preload" id = "recapVideo" controls poster = "/public/imgs/recapthumbnail.png"></video>
 			</div>
 		</div>
 	</div>
+
+
 	<div id = "sponsor" class = "cotainer-fluid">
 		<div class = "row tableRow text-cener justify-content-center">
 			<div class = "col-md-10">
@@ -186,7 +156,7 @@
 						<img src="/public/imgs/2-imsa.png">
 					</div>
 					<div class="back">
-						<p>An Optimus Prime Partner since 2007, Illinois Mathematics and Science Academy provides Team 2022 with a workspace, power tools, and basic utilities.</p><br>
+						<p>An Optimus Prime Partner since 2007, IMSA provides Team 2022 with a workspace, power tools, and basic utilities.</p><br>
 						<div class="button">
 							<div class="title">
 								<a href="https://www.imsa.edu/" target="_blank">VIEW SITE</a>
@@ -216,7 +186,7 @@
 						<img src="/public/imgs/4-gb-electric.png">
 					</div>
 					<div class="back">
-						<p>An R2D2 Partner since 2017, Gus Berthold Electric provides Team 2022 with sheet metal and sheet metal    machining services.</p><br>
+						<p>An R2D2 Partner since 2017, Gus Berthold Electric provides Team 2022 with sheet metal and machining services.</p><br>
 						<div class="button">
 							<div class="title">
 								<a href="https://bertholdelectric.com/" target="_blank">VIEW SITE</a>
@@ -228,10 +198,10 @@
 			<div class = "col-md-4 col-sm-6">
 				<div class="flipcard h m-auto">
 					<div class="front">
-						<img src="/public/imgs/5-te-connectivity.png">
+						<img src="/public/imgs/5-te-connectivity-foundation.png">
 					</div>
 					<div class="back">
-						<p>An R2D2 Partner since 2018, TE Connectivity Ltd. provides Team 2022 with monetary support.</p><br>
+						<p>An R2D2 Partner since 2018, TE Connectivity Foundation provides Team 2022 with monetary support.</p><br>
 						<div class="button">
 							<div class="title">
 								<a href="https://www.te.com/usa-en/home.html" target="_blank">VIEW SITE</a>
@@ -288,23 +258,28 @@
 			<div class = "col-md-4 col-sm-6">
 				<div class="flipcard h m-auto">
 					<div class="front">
-						<img src="/public/imgs/9-bill.png">
+						<img src="/public/imgs/9-greenberg.png">
 					</div>
 					<div class="back">
-						<br><p>A Wall-E Partner since 2016, Art By Bill provides Team 2022 with welding services.</p>
+						<p>A C3PO Partner since 2019, Greenberg Traurig provides Team 2022 with monetary support.</p><br>
+						<div class="button">
+							<div class="title">
+								<a href = "https://www.gtlaw.com/en" target="_blank">VIEW SITE</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class = "col-md-4 col-sm-6">
 				<div class="flipcard h m-auto">
 					<div class="front">
-						<img src="/public/imgs/10-TM.png">
+						<img src="/public/imgs/10-solidworks.png">
 					</div>
 					<div class="back">
-						<p>A Wall-E Partner since 2018, TransMarket Group provides Team 2022 with monetary support.</p><br>
+						<p>A C3PO Partner since 2018, Solidworks provides Team 2022 with free licenses.</p><br>
 						<div class="button">
 							<div class="title">
-								<a href="http://www.transmarketgroup.com/home" target="_blank">VIEW SITE</a>
+								<a href="https://www.solidworks.com/" target="_blank">VIEW SITE</a>
 							</div>
 						</div>
 					</div>
@@ -328,9 +303,11 @@
 			<div class = "col-md-4 col-sm-6">
 				<div class="flipcard h m-auto">
 					<div class="front">
+						<br>
 						<h1>JOIN THE LIST</h1>
 					</div>
 					<div class="back">
+						<br>
 						<div class="button">
 							<div class="title">
 								<a href="mailto:titan2022robotics@gmail.com" target="_blank">CONTACT US!</a>
@@ -378,7 +355,7 @@
 						<a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank"><img src = "/public/imgs/facebooklogo.png"/></a>
 					</div>
 					<div class = "col-4 text-center d-flex align-items-center">
-						<a href = "https://www.instagram.com/titan2022robotics/" rel = "noopener noreferrer" target="_blank"><img src = "/public/imgs/instagram.png" /></a>
+						<a href = "https://www.instagram.com/titanrobotics2022/" rel = "noopener noreferrer" target="_blank"><img src = "/public/imgs/instagram.png" /></a>
 					</div>
 				</div>
 			</div>
