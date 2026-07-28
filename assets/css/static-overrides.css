@@ -1,0 +1,16 @@
+/* Static-export adjustments. */
+.titan-form__notice {
+  margin: 0 0 var(--space-md);
+  color: var(--color-text-muted);
+}
+.download-list li {
+  margin-block: .65rem;
+}
+.page-banner--utility {
+  min-height: 18rem;
+}
+@media (max-width: 520px) {
+  .page-banner--utility {
+    min-height: 15rem;
+  }
+}

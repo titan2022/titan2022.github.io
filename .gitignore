@@ -1,0 +1,14 @@
+# Never place migration inputs or server-side WordPress files in this repository.
+*.zip
+*.wpress
+*.sql
+*.sql.gz
+*.log
+*.php
+.env
+.env.*
+wp-config.php
+
+# Local development residue.
+.DS_Store
+node_modules/

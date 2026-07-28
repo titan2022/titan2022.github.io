@@ -1,0 +1,21 @@
+/*
+Theme Name: Titan Robotics
+Theme URI: https://www.instagram.com/titanrobotics2022/
+Author: Titan Robotics #2022
+Author URI: https://www.instagram.com/titanrobotics2022/
+Description: Custom lightweight theme for Titan Robotics, FIRST Robotics Competition Team #2022 at the Illinois Mathematics and Science Academy. Navy/cyan brand system, Rajdhani + Inter typography, low-poly angled section geometry echoing the team's Atlas logo. Auto-installs all pages, menu, and starter Season entries on activation.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.7
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: titan-robotics
+Tags: custom-menu, featured-images, one-column, two-columns
+*/
+
+/*
+ * All styles are enqueued from assets/css/ (variables.css, layout.css,
+ * components.css) via functions.php. This file intentionally holds only
+ * the theme header.
+ */

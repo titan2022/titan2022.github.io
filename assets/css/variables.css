@@ -1,0 +1,68 @@
+/* ==========================================================================
+   Titan Robotics — design tokens
+   Brand palette is fixed (team's Pantone-matched brand guide) — do not
+   introduce additional hues.
+   ========================================================================== */
+
+:root {
+	/* Core brand palette */
+	--navy: #1A3668;       /* PMS 294C — primary dark, main brand anchor */
+	--cyan: #00B4DF;       /* PMS 638C — primary accent */
+	--cool-grey: #8B92AB;  /* PMS Cool Grey 7C — secondary/neutral accent */
+	--black: #000000;
+	--white: #ffffff;
+
+	/* Hero gradient — sampled from the real logo file, 6 bands, dark → light */
+	--hero-gradient-1: #1B3E66;
+	--hero-gradient-2: #1F5187;
+	--hero-gradient-3: #265A96;
+	--hero-gradient-4: #256FBF;
+	--hero-gradient-5: #297AD3;
+	--hero-gradient-6: #4B91DB;
+
+	/* Derived neutrals (tints/shades of the brand set — not new hues).
+	   --ink-muted exists because cool-grey on white is only ~3:1 and must
+	   not carry body-size text. */
+	--ink: #10203d;              /* near-navy body text */
+	--ink-muted: #46536e;        /* muted text that still passes AA on white */
+	--navy-deep: #122749;        /* darker navy for footer bottom bar / overlays */
+	--tint: #f2f4f8;             /* light section background */
+	--tint-border: #dde2ec;
+	--error: #b3423f;            /* desaturated red, form validation only */
+
+	/* Type */
+	--font-display: "Rajdhani", "Arial Narrow", sans-serif;
+	--font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+	/* Scale */
+	--text-xs: 0.8125rem;
+	--text-sm: 0.9375rem;
+	--text-base: 1.0625rem;
+	--text-lg: clamp(1.15rem, 1rem + 0.5vw, 1.35rem);
+	--h3: clamp(1.25rem, 1.1rem + 0.7vw, 1.6rem);
+	--h2: clamp(1.7rem, 1.4rem + 1.4vw, 2.6rem);
+	--h1: clamp(2.4rem, 1.8rem + 3vw, 4.5rem);
+
+	/* Layout */
+	--container: 72rem;
+	--container-narrow: 46rem;
+	--section-pad: clamp(3.5rem, 2.5rem + 4vw, 6.5rem);
+	--radius: 10px;
+	--radius-sm: 6px;
+
+	/* Signature angled geometry (low-poly logo motif) */
+	--facet: clamp(1.5rem, 3.5vw, 3rem);
+
+	/* Focus ring */
+	--focus-ring: 3px solid var(--cyan);
+}
+
+.hero-gradient-bg {
+	background: linear-gradient(90deg,
+		var(--hero-gradient-1) 0%,
+		var(--hero-gradient-2) 20%,
+		var(--hero-gradient-3) 40%,
+		var(--hero-gradient-4) 60%,
+		var(--hero-gradient-5) 80%,
+		var(--hero-gradient-6) 100%);
+}

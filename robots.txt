@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://titanrobotics2022.com/sitemap.xml

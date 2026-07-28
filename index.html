@@ -1,449 +1,246 @@
-<!DOCTYPE HTML>
-<!--Samuel Anozie, June 2019. Titan Robotics Website-->
-<!--Jai Sutaria, January 2021. Updated sponsors and season recap -->
-<!-- Jai Sutaria, August 2022. Updates sponsors and newsletters -->
+<!doctype html>
+<html lang="en-US">
 <head>
-	<meta charset="UTF-8">
-	<title>Titan Robotics</title>
-	 <!--Favicon-->
-	 <link rel="icon" href="/public/imgs/drawing.svg" type="image/png" sizes="16x16">
-	<!-- Bootstrap Links -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-	<!--Odometer Links-->
-	<link rel="stylesheet" href="/public/odometer-theme-default.css" />
-	<script src="/public/odometer.js"></script>
-
-	<!--Local Links-->
-	<link rel="stylesheet" href="/public/styles.css">
-	<script src = "/public/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="/public/sponsors.css">
-	
-</head>
-<!-- Future Plans-->
-<!--Eventually animate the circutry on landing-->
-<body>
-    <div id="landing" class="container-fluid">
-        <div id="items" class="row h-100 justify-content-center">
-            <div class="col-md-4 col-sm-6 col-6 text-right">
-                <h1 id="titan" class="headerTitle">TITAN</h1>
-            </div>
-            <div id="robotCol" class="col-md-4 h-100 text-center">
-                <div id="robotContainer" class="position-relative h-100">
-                    <img id="robotImg" src="/public/imgs/favicon.png" class="img-fuid position-absolute">
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-6">
-				<h1 id="robotics" class="headerTitle">ROBOTICS</h1>
-            </div>
-        </div>
-    </div>
-    <div id="teamnum" class="container-fluid position-absolute" data-scroll-speed="2">
-        <div class="row justify-content-center">
-            <div class="col-md-5 text-center">
-                <h2 class="numDescrip">FRC TEAM</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 text-center">
-                <h1 style="pointer-events: auto;">Aurora, Illinois</h1>
-            </div>
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-md-12 text-center">
-                <h2 class="numDescrip">EST. FALL 2006</h2>
-            </div>
-        </div>
-    </div>
-	<div id="intro" class = "container-fluid position-relative">
-		<h2 style="font-size: 67px; line-height: 1.2;">
-  Located in Aurora, IL, IMSA is a residential high school that accepts gifted students from across the state, making our backgrounds diverse and impacts far-reaching. We compete in the FIRST Robotics Competition (FRC) and other off-season competitions, which teaches our members technical skills, such as <span class="bold">mechanical, programming, electrical,</span> and <span class="bold">computer aided design (CAD),</span> as well as soft skills involving <span class="bold">business, leadership,</span> and <span class="bold">communication.</span>
-</h2>
-	</div>
-	<!--if the code for the scrolling needs to be readded put it here-->
-				
-			</div>
-		</div>
-	</div>
-	<div id = "frc" class = "container-fluid position-relative">
-		<span id = "frcback" class = "position-absolute"></span>
-		<div id = "firstLogo" class = "row justify-content-center">
-			<div class = "col-md-6 text-center">
-				<img src = "/public/imgs/firstlogo.png" class = "img-fluid"/>
-			</div>
-		</div>
-		<div class = "row justify-content-center">
-			<div class = "col-md-12 text-center">
-				<h2 id = "newsletterInfo">Read our monthly newsletters to see what our team has been up to!</h2>
-			</div>		
-			<div class = "col" id = "newsletterMonth">
-				<a href = "public/Pre-Season Newsletter.pdf" target = "_blank">Pre-Season</a>
-				<h3 id = "newsletter"><iframe src="public/Pre-Season Newsletter.pdf" width="350px" height="450px"></iframe></h3>
-			</div>
-			<div class = "col" id = "newsletterMonth">
-				<a href = "public/Start of Season Newsletter.pdf" target = "_blank">Start of Season</a>
-				<h3 id = "newsletter"><iframe src="public/Start of Season Newsletter.pdf" width="350px" height="450px"></iframe></h3>
-			</div>
-			<div class = "col" id = "newsletterMonth">
-				<a href = "public/Summer Newsletter.pdf" target = "_blank">Summer</a>
-				<h3 id = "newsletter"><iframe src="public/Summer Newsletter.pdf" width="350px" height="450px"></iframe></h3>
-			</div>
-
-			<div class = "col" id = "seasonRecap">   
-				<br><h3>Check out a recap of our 2019-2020 season:</h3>
-				<video width="640px" height = "360px" src="/public/2019-20Recap.mp4" preload="none" id = "recapVideo" controls poster = "/public/imgs/recapthumbnail.png"></video>
-			</div>
-		</div>
-	</div>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Titan Robotics | FRC Team #2022</title>
+<meta content="max-image-preview:large" name="robots"/>
+<meta content="Titan Robotics is FIRST Robotics Competition Team #2022, based at the Illinois Mathematics and Science Academy — a no-cost, student-led team building robots and spreading STEM education across Illinois." name="description"/>
+<link href="//fonts.googleapis.com" rel="dns-prefetch"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
 
 
-	<div id = "sponsor" class = "cotainer-fluid">
-		<div class = "row tableRow text-cener justify-content-center">
-			<div class = "col-md-10">
-				<h2 id = "sponsorHeader">SPONSORS</h2>
-			</div>
-		</div>
-		<div class = "row tableRow text-cener justify-content-center">
-			<div class = "col-md-10 ">
-				<p class = "lead">Sponsorship provides us with necessary support, including financial contributions, in-kind donations, employee volunteerism and mentoring, which are all vital to our growth and success as an FRC team. We would like to extend our deepest thanks to all of our sponsors for their continued support!</p>
-			</div>
-		</div>
-		<div id="sponsorTable" class = "row tableRow">
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/1-caterpillar.png">
-					</div>
-					<div class="back">
-						<p>An Optimus Prime Partner since 2008, Caterpillar Inc. provides Team 2022 with monetary support and mentorship contributions.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.caterpillar.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/2-imsa.png">
-					</div>
-					<div class="back">
-						<p>An Optimus Prime Partner since 2007, IMSA provides Team 2022 with a workspace, power tools, and basic utilities.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.imsa.edu/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/10-solidworks.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2018, Solidworks provides Team 2022 with free licenses.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.solidworks.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/8-share-machine.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2018, Share Machine provides Team 2022 with machining services.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="http://sharemachine.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!-- <div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/5-te-connectivity-foundation.png">
-					</div>
-					<div class="back">
-						<p>An R2D2 Partner since 2018, TE Connectivity Foundation provides Team 2022 with monetary support.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.te.com/usa-en/home.html" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<!-- <div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/6-boeing.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2018, The Boeing Company provides Team 2022 with monetary support.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.boeing.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/7-fv-sandblasting.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2018, Fox Valley Sandblasting &amp; Powder Coating provides Team 2022 with powder coating services.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="http://www.blastandcoat.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/8-share-machine.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2018, Share Machine provides Team 2022 with machining services.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="http://sharemachine.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/9-greenberg.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2019, Greenberg Traurig provides Team 2022 with monetary support.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href = "https://www.gtlaw.com/en" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/10-solidworks.png">
-					</div>
-					<div class="back">
-						<p>A C3PO Partner since 2018, Solidworks provides Team 2022 with free licenses.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.solidworks.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/11-walmart.png">
-					</div>
-					<div class="back">
-						<p>A Wall-E Partner since 2018, Walmart provides Team 2022 with monetary support.</p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.walmart.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/jewel_osco.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.jewelosco.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/omron.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.omron.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/dtv_innovations.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.dtvinnovations.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/bild.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.getbild.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/fabworks.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.fabworks.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/elegoo.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.elegoo.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<img src="/public/imgs/molex.png">
-					</div>
-					<div class="back">
-						<p></p><br>
-						<div class="button">
-							<div class="title">
-								<a href="https://www.molex.com/" target="_blank">VIEW SITE</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
 
-			<div class = "col-md-4 col-sm-6">
-				<div class="flipcard h m-auto">
-					<div class="front">
-						<br>
-						<h1>JOIN THE LIST</h1>
-					</div>
-					<div class="back">
-						<br>
-						<div class="button">
-							<div class="title">
-								<a href="mailto:titan2022robotics@gmail.com" target="_blank">CONTACT US!</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<br><br>
-	
-	<div id = "contact" class = "container-fluid">
-		<div class="row justify-content-center">
-			<div class = "col-md-6 text-center">
-				<h2>CONTACT US</h2>
-				<form action="https://formspree.io/f/xjvloayy" method="POST">
-					<input type="text" id="fname" name="fname" placeholder = "First Name" required><br/>
-					<input type="text" id="lname" name="lname" placeholder = "Last Name" required><br/>
-					<input type="email" id="email" name="email" placeholder = "Email" required><br/>
-					<select id="affiliation" name="affiliation" placeholder = "Affiliation" required>
-						<option id = "affiloption" value="" disabled selected>Affiliation</option>
-						<option value="fellowFRC">Fellow FRC Team</option>
-						<option value="potentialSponsor">Potential Sponsor</option>
-						<option value="other">Other</option>
-					</select><br/>
-					<textarea id="message" name="message" rows="3" placeholder = "Write your message in here..." required></textarea><br/>
-					<button type = "submit" class="bttn-fill bttn-md bttn-default">Submit</button>
-				</form>
-			</div>
-		</div>
-	</div>
-	<div id = "footer" class = "container-fluid">
-		<div class = "row">
-			<div id = "name" class = "col-md-4 text-center">
-				<h5>TITAN <span>ROBOTICS</span></h5>
-			</div>
-			<div id = "footerLogo" class = "col-md-4">
-				<a href = "#landing"><img src = "/public/imgs/iconlogo.png" class = "img-fluid"/></a>
-			</div>
-			<div id = "icons" class = "col-md-4">
-				<div class = "row w-100">
-					<div class = "col-4 text-center d-flex align-items-center">
-						<a href="https://twitter.com/team2022" rel="noopener noreferrer" target="_blank"><img src = "/public/imgs/twitterlogo.png"/></a>
-					</div>
-					<div class = "col-4 text-center d-flex align-items-center ">
-						<a href="https://www.facebook.com/TitanRobotics2022/" rel="noopener noreferrer" target="_blank"><img src = "/public/imgs/facebooklogo.png"/></a>
-					</div>
-					<div class = "col-4 text-center d-flex align-items-center">
-						<a href = "https://www.instagram.com/titanrobotics2022/" rel = "noopener noreferrer" target="_blank"><img src = "/public/imgs/instagram.png" /></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+
+
+
+
+
+
+
+
+
+
+<link href="https://titanrobotics2022.com/" rel="canonical"/>
+
+<meta content="website" property="og:type"/><meta content="Titan Robotics | FRC Team #2022" property="og:title"/><meta content="Titan Robotics is FIRST Robotics Competition Team #2022, based at the Illinois Mathematics and Science Academy — a no-cost, student-led team building robots and spreading STEM education across Illinois." property="og:description"/><meta content="https://titanrobotics2022.com/" property="og:url"/><meta content="Titan Robotics #2022" property="og:site_name"/><meta content="https://titanrobotics2022.com/assets/images/team-working-on-robot-robot-on-the-cart-while-members-are-on-the-ground-working-on-changing-the-swerves-while-in-line-for-practice-field.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><meta content="Titan Robotics | FRC Team #2022" name="twitter:title"/><meta content="Titan Robotics is FIRST Robotics Competition Team #2022, based at the Illinois Mathematics and Science Academy — a no-cost, student-led team building robots and spreading STEM education across Illinois." name="twitter:description"/><meta content="https://titanrobotics2022.com/assets/images/team-working-on-robot-robot-on-the-cart-while-members-are-on-the-ground-working-on-changing-the-swerves-while-in-line-for-practice-field.png" name="twitter:image"/><link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="/assets/css/variables.css" rel="stylesheet"/><link href="/assets/css/layout.css" rel="stylesheet"/><link href="/assets/css/components.css" rel="stylesheet"/><link href="/assets/css/theme.css" rel="stylesheet"/><link href="/assets/css/static-overrides.css" rel="stylesheet"/><link href="/assets/images/logos/no-background-2022Logo-black-blue-gear-with-titan.png" rel="icon" type="image/png"/></head>
+<body class="home page-template-default page page-id-6 has-transparent-header">
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header site-header--transparent" id="site-header">
+<div class="nav-bar">
+<div class="nav-bar__inner">
+<a aria-label="Titan Robotics — FRC Team #2022, home" class="nav-brand" href="/">
+<img alt="" aria-hidden="true" class="nav-brand__logo" decoding="async" src="/assets/images/logos/no-background-white-gear.png"/>
+<span class="nav-brand__text">
+<span class="nav-brand__name">Titan Robotics</span>
+<span class="nav-brand__team">FRC Team #2022</span>
+</span>
+</a>
+<button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="nav-toggle" type="button">
+<span aria-hidden="true" class="nav-toggle__bar"></span>
+<span aria-hidden="true" class="nav-toggle__bar"></span>
+<span aria-hidden="true" class="nav-toggle__bar"></span>
+</button>
+<nav aria-label="Primary" class="primary-nav" id="primary-nav">
+<ul class="primary-nav__list" id="menu-primary-menu"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-6 current_page_item menu-item-21" id="menu-item-21"><a aria-current="page" href="/">Home</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-22" id="menu-item-22"><a href="/about/">About Us</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-23" id="menu-item-23"><a href="/about/our-team/">Our Team</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-24" id="menu-item-24"><a href="/about/leadership/">Leadership</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-25" id="menu-item-25"><a href="/about/awards/">Awards</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-26" id="menu-item-26"><a href="/about-first/">About FIRST</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-27" id="menu-item-27"><a href="/robot/">Robot</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28" id="menu-item-28"><a href="/robot/current-season/">Current Season</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29" id="menu-item-29"><a href="/robot/gallery/">Robot Gallery</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30" id="menu-item-30"><a href="/robot/cad-technical/">CAD &amp; Technical</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-31" id="menu-item-31"><a href="/impact/">Impact</a>
+<ul class="sub-menu">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32" id="menu-item-32"><a href="/impact/outreach/">Outreach</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-33" id="menu-item-33"><a href="/past-seasons/">Past Seasons</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-34" id="menu-item-34"><a href="/sponsors/">Sponsor/Donate</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-35" id="menu-item-35"><a href="/contact/">Contact</a></li>
+</ul> </nav>
+</div>
+</div>
+</header>
+<main class="site-main" id="main">
+<!-- ============ HERO ============ -->
+<section class="home-hero hero-gradient-bg">
+<div aria-hidden="true" class="home-hero__media">
+<img alt="" class="home-hero__img" decoding="async" loading="eager" src="/assets/images/team-picture-2025-26.png"/>
+</div>
+<div aria-hidden="true" class="home-hero__overlay"></div>
+<canvas aria-hidden="true" class="home-hero__particles" id="hero-particles"></canvas>
+<div class="home-hero__content">
+<img alt="" aria-hidden="true" class="home-hero__logo-img" decoding="async" src="/assets/images/logos/no-background-white-gear-titan-rock-with-text.png"/>
+<h1 class="home-hero__title">Titan Robotics <span class="home-hero__title-team">FRC Team #2022</span></h1>
+<p class="home-hero__sub">A no-cost, student-led robotics team at the Illinois Mathematics and Science Academy, building robots and spreading STEM across Illinois since 2006.</p>
+<div class="home-hero__actions">
+<a class="titan-btn titan-btn--cyan" href="/sponsors/">Become a Sponsor</a>
+<a class="titan-btn titan-btn--ghost" href="/about/">Learn More</a>
+</div>
+</div>
+</section>
+<!-- ============ WELCOME ============ -->
+<section class="home-welcome section" id="welcome">
+<div class="section__inner home-welcome__grid">
+<figure class="home-welcome__media reveal">
+<img alt="Students in the stands cheering on the Titans, holding one poster per letter." class="home-welcome__img" decoding="async" loading="lazy" src="/assets/images/close-up-of-students-on-stands-cheering-on-titans-visible-one-poster-per-letter.JPG"/>
+</figure>
+<div class="home-welcome__text reveal">
+<p class="section__eyebrow">Welcome</p>
+<h2>Hi, we're the Titans.</h2>
+<p>Hi! We are a FIRST Robotics Competition (FRC) team based at the Illinois Mathematics and Science Academy in Aurora, Illinois. Titan Robotics #2022 was founded in 2006 and has since grown into our team of 50 students today. We strive to create a sustainable and diverse learning environment, empowering the future engineers of our generation. On top of building up our own students’ strength, we spread STEM education through outreach initiatives all across Illinois.</p>
+<a class="titan-arrow-link" href="/about/">More about our team →</a>
+</div>
+</div>
+</section>
+<!-- ============ WHAT WE DO ============ -->
+<section class="home-whatwedo section section--navy angled-top">
+<div class="section__inner">
+<p class="section__eyebrow section__eyebrow--cyan">Our Work</p>
+<h2 class="section__title--light">What We Do</h2>
+<div class="whatwedo-grid stagger">
+<article class="whatwedo-card reveal tilt">
+<span aria-hidden="true" class="whatwedo-card__icon"><svg aria-hidden="true" class="titan-icon" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M12 15.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm8.7-2.2.2-1.3-.2-1.3 2-1.6-2-3.4-2.4.9a8 8 0 0 0-2.2-1.3L15.7 3h-4l-.4 2.3a8 8 0 0 0-2.2 1.3l-2.4-.9-2 3.4 2 1.6a8 8 0 0 0 0 2.6l-2 1.6 2 3.4 2.4-.9c.7.6 1.4 1 2.2 1.3l.4 2.3h4l.4-2.3a8 8 0 0 0 2.2-1.3l2.4.9 2-3.4-2-1.6Z"></path></svg></span>
+<h3>Compete</h3>
+<p class="whatwedo-card__stat">115 lbs · 3-Month Build Season</p>
+<p>Every year, we compete in the annual FIRST Robotics Competition from January to March. In these three months, we CAD, build, wire, and program a fully-functional, 115 lb robot.</p>
+<a class="titan-arrow-link titan-arrow-link--cyan" href="https://www.thebluealliance.com/team/2022" rel="noopener">View our season on The Blue Alliance →</a>
+</article>
+<article class="whatwedo-card reveal tilt">
+<span aria-hidden="true" class="whatwedo-card__icon"><svg aria-hidden="true" class="titan-icon" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M12 21s-7.5-4.6-10-9.3C.4 8.6 2.3 5 5.7 5c2 0 3.4 1 4.3 2.6l2 3.4 2-3.4C15 6 16.3 5 18.3 5c3.4 0 5.3 3.6 3.7 6.7C19.5 16.4 12 21 12 21Z"></path></svg></span>
+<h3>Community Impact</h3>
+<p class="whatwedo-card__stat">4,000+ Volunteer Hours</p>
+<p>We give our time back to the communities that support us, volunteering at FIRST events and local programs all year long.</p>
+</article>
+<article class="whatwedo-card reveal tilt">
+<span aria-hidden="true" class="whatwedo-card__icon"><svg aria-hidden="true" class="titan-icon" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.2 1 2V18h6v-1.3c0-.8.4-1.5 1-2A7 7 0 0 0 12 2Zm-3 18h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1v-1Z"></path></svg></span>
+<h3>STEM Outreach</h3>
+<p class="whatwedo-card__stat">350+ STEM Kits Distributed</p>
+<p>From SPIKE kit workshops to library visits, we bring hands-on STEM education to kids all across Illinois.</p>
+</article>
+<article class="whatwedo-card reveal tilt">
+<span aria-hidden="true" class="whatwedo-card__icon"><svg aria-hidden="true" class="titan-icon" fill="currentColor" focusable="false" viewbox="0 0 24 24"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM2 19v-1c0-2.2 2.7-4 6-4s6 1.8 6 4v1H2Zm14 0v-1c0-1.3-.6-2.4-1.6-3.3.5-.1 1-.2 1.6-.2 3.3 0 6 1.8 6 4v.5H16Z"></path></svg></span>
+<h3>Mentorship</h3>
+<p class="whatwedo-card__stat">22 Cities · 10 Counties Reached</p>
+<p>Experienced members teach rookies, and the whole team works alongside younger students discovering STEM for the first time.</p>
+</article>
+</div>
+</div>
+</section>
+<!-- ============ RECENT HIGHLIGHTS ============ -->
+<section class="home-highlights section">
+<div class="section__inner">
+<p class="section__eyebrow">Recent Highlights</p>
+<h2>What we've been up to</h2>
+<p class="section__lede">Updates from competitions, outreach events, and everything in between.</p>
+<div class="highlights-grid stagger">
+</div>
+</div>
+</section>
+<!-- ============ SPONSOR PREVIEW ============ -->
+<section class="home-sponsors section section--grey angled-top">
+<div class="section__inner home-sponsors__grid">
+<div class="home-sponsors__text reveal">
+<p class="section__eyebrow">Our Sponsors</p>
+<h2>Thank you to the organizations that make our mission possible!</h2>
+<p>Sponsorship provides us with the resources needed to design, build, and compete while expanding STEM opportunities within our community. We are incredibly grateful for the continued support of our sponsors.</p>
+<a class="titan-btn titan-btn--navy" href="/sponsors/">Become a Sponsor →</a>
+</div>
+<div class="home-sponsors__logos reveal">
+<ul aria-label="Our current sponsors" class="sponsor-grid">
+<li class="sponsor-grid__item tilt">
+<div aria-label="Placeholder for the Caterpillar logo" class="titan-placeholder titan-placeholder--logo-slot" role="img">
+<span class="titan-placeholder__badge">Logo</span>
+</div>
+<p class="sponsor-grid__name">Caterpillar</p>
+</li>
+<li class="sponsor-grid__item tilt">
+<div aria-label="Placeholder for the Molex logo" class="titan-placeholder titan-placeholder--logo-slot" role="img">
+<span class="titan-placeholder__badge">Logo</span>
+</div>
+<p class="sponsor-grid__name">Molex</p>
+</li>
+<li class="sponsor-grid__item tilt">
+<div aria-label="Placeholder for the IENTC Telecomunicaciones logo" class="titan-placeholder titan-placeholder--logo-slot" role="img">
+<span class="titan-placeholder__badge">Logo</span>
+</div>
+<p class="sponsor-grid__name">IENTC Telecomunicaciones</p>
+</li>
+<li class="sponsor-grid__item tilt">
+<div aria-label="Placeholder for the Gene Haas Foundation logo" class="titan-placeholder titan-placeholder--logo-slot" role="img">
+<span class="titan-placeholder__badge">Logo</span>
+</div>
+<p class="sponsor-grid__name">Gene Haas Foundation</p>
+</li>
+<li class="sponsor-grid__item tilt">
+<div aria-label="Placeholder for the [VERIFY SPELLING — appears to read “Share Machine” on the source logo graphic but is not fully legible; confirm exact company name before publishing] logo" class="titan-placeholder titan-placeholder--logo-slot" role="img">
+<span class="titan-placeholder__badge">Logo</span>
+</div>
+<p class="sponsor-grid__name">[VERIFY SPELLING — appears to read “Share Machine” on the source logo graphic but is not fully legible; confirm exact company name before publishing]</p>
+</li>
+<li class="sponsor-grid__item tilt">
+<div aria-label="Placeholder for the IMSA Fund for the Advancement of Education logo" class="titan-placeholder titan-placeholder--logo-slot" role="img">
+<span class="titan-placeholder__badge">Logo</span>
+</div>
+<p class="sponsor-grid__name">IMSA Fund for the Advancement of Education</p>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</main>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div class="site-footer__col site-footer__col--brand">
+<div class="footer-brand">
+<img alt="" aria-hidden="true" class="footer-brand__logo" decoding="async" loading="lazy" src="/assets/images/logos/no-background-white-gear-titan-rock-with-text.png"/>
+<p class="footer-brand__name">Titan Robotics<br/><span>FRC Team #2022</span></p>
+</div>
+<p class="site-footer__tagline">A no-cost, no-experience-needed FRC team, 100% sponsor-funded.</p>
+</div>
+<nav aria-label="Footer quick links" class="site-footer__col">
+<h2 class="site-footer__heading">Quick Links</h2>
+<ul class="site-footer__list">
+<li><a href="/">Home</a></li>
+<li><a href="/about/">About Us</a></li>
+<li><a href="/past-seasons/">Past Seasons</a></li>
+<li><a href="/sponsors/">Sponsor/Donate</a></li>
+<li><a href="/contact/">Contact</a></li>
+<li><a href="/newsletters/">Newsletters &amp; archive</a></li></ul>
+</nav>
+<div class="site-footer__col">
+<h2 class="site-footer__heading">Social Media</h2>
+<ul class="site-footer__list">
+<li><a href="https://www.instagram.com/titanrobotics2022/" rel="noopener">Instagram: @titanrobotics2022</a></li>
+
+</ul>
+</div>
+<div class="site-footer__col">
+<h2 class="site-footer__heading">Contact</h2>
+<ul class="site-footer__list">
+<li>Email: <a href="mailto:titan2022robotics@gmail.com">titan2022robotics@gmail.com</a></li>
+<li>1500 Sullivan Rd,<br/>Aurora, Illinois 60506 (IMSA)</li>
+</ul>
+</div>
+</div>
+<div class="site-footer__bottom">
+<p>© 2026 Titan Robotics, FRC Team #2022. All rights reserved.</p>
+</div>
+</footer>
+
+
+
+
+
+<script src="/assets/js/nav.js"></script><script src="/assets/js/main.js"></script></body>
+</html>
