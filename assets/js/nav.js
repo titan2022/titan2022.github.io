@@ -11,6 +11,22 @@
 	var nav = document.getElementById('primary-nav');
 	var mq = window.matchMedia('(max-width: 880px)');
 
+	// Time-sensitive 2026–27 recruiting announcement. Inject it into the
+	// shared site header so every primary route receives the same banner.
+	if (header && !header.querySelector('.application-banner')) {
+		var applicationBanner = document.createElement('a');
+		applicationBanner.className = 'application-banner';
+		applicationBanner.href = 'https://docs.google.com/forms/d/e/1FAIpQLSfSLbmbYm93_6Y3pT8MCV_oa4UwhLRRAq6Z4lW5LeGqe-qqJw/viewform';
+		applicationBanner.setAttribute('aria-label', 'Applications for the 2026–27 Titan Robotics team are open. Apply by August 31 at 11:59 PM.');
+		applicationBanner.innerHTML = '<span class="application-banner__inner">' +
+			'<span class="application-banner__label">Applications open now</span>' +
+			'<span aria-hidden="true" class="application-banner__divider">•</span>' +
+			'<span class="application-banner__deadline">2026–27 · Due Aug 31 at 11:59 PM</span>' +
+			'<span class="application-banner__cta">Apply <span aria-hidden="true">→</span></span>' +
+			'</span>';
+		header.insertBefore(applicationBanner, header.firstChild);
+	}
+
 	// Transparent header solidifies after a small scroll.
 	if (header && header.classList.contains('site-header--transparent')) {
 		var onScroll = function () {

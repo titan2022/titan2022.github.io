@@ -103,6 +103,70 @@ a:hover { color: var(--hero-gradient-4); }
    Header / navigation
    -------------------------------------------------------------------------- */
 
+/* Time-sensitive recruiting announcement. Keep this in the shared header so
+   it is visible on every primary site route on both desktop and mobile. */
+.application-banner {
+	display: block;
+	background: var(--cyan);
+	color: var(--navy-deep);
+	text-decoration: none;
+	border-bottom: 1px solid rgba(18, 39, 73, 0.18);
+}
+.application-banner:hover {
+	background: #33c4e6;
+	color: var(--navy-deep);
+}
+.application-banner:focus-visible {
+	outline: 3px solid var(--white);
+	outline-offset: -3px;
+	border-radius: 0;
+}
+.application-banner__inner {
+	max-width: var(--container);
+	min-height: 2.5rem;
+	margin: 0 auto;
+	padding: 0.45rem 1.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.65rem;
+	line-height: 1.25;
+	text-align: center;
+}
+.application-banner__label,
+.application-banner__cta {
+	font-family: var(--font-display);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+}
+.application-banner__label { font-size: 0.88rem; }
+.application-banner__divider { opacity: 0.55; }
+.application-banner__deadline { font-size: 0.8rem; font-weight: 600; }
+.application-banner__cta {
+	font-size: 0.82rem;
+	white-space: nowrap;
+	border-bottom: 2px solid currentColor;
+}
+
+@media (max-width: 560px) {
+	.application-banner__inner {
+		min-height: 3.1rem;
+		padding: 0.38rem 0.75rem;
+		flex-wrap: wrap;
+		column-gap: 0.5rem;
+		row-gap: 0.08rem;
+	}
+	.application-banner__label { font-size: 0.82rem; }
+	.application-banner__divider { display: none; }
+	.application-banner__deadline {
+		order: 3;
+		flex-basis: 100%;
+		font-size: 0.72rem;
+	}
+	.application-banner__cta { font-size: 0.78rem; }
+}
+
 .site-header {
 	position: sticky;
 	top: 0;
